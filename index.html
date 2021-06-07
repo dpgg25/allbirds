@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/footer.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <title>올버즈 포트폴리오</title>		
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.hd_top .ham_menu').click(function(){
+				$(this).toggleClass('change');
+				$('.hd_wrap .hd_back').toggleClass('on');
+				$('html, body').toggleClass('scroll_hidden');
+			});
+		});
+
+		$('.hd_back .gnb .men').on('click', function(){
+				$('.hd_gnb.man').toggleClass('on');
+		});
+	</script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+			<div class="hd_wrap">
+				<div class="hd_top">
+					<div class="ham_menu">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+					<h1 class="logo">
+						<a href="#"><img src="./img/allbirds-logo.svg" alt="allbirds logo"></a>
+					</h1>
+					<div class="cart_box">
+						<a href=""><img src="./img/cart.png" class="cart" alt="장바구니"/></a>
+					</div>
+				</div>
+				<div class="hd_back">
+					<nav class="gnb">
+						<ul>
+							<li class="men">
+								<a href="">MEN<span>〉</span></a>
+							</li>
+							<li class="women">
+								<a href="">WOMEN<span>〉</span></a>
+							</li>
+							<li><a href="">KIDS</a></li>
+						</ul>
+					</nav>
+					<div class="util">
+						<ul>
+							<li class="sus">
+								<a href="">SUSTAINABILITY<span>〉</span></a>
+							</li>
+							<li><a href="">STORES</a></li>
+							<li>
+								<a href="">
+									<img class="help" src="./img/help.svg" alt="고객센터"/>
+									<p>Help</p>
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<a href="" class="hd_banner">
+				<div class="banner_box">
+					<div class="content">
+						<span class="text">따스한 햇살과 잘 어울리는 Tree 소재의 신발 신상 컬러 출시!
+						</span>
+						<span class="text_underline">바로가기</span>
+					</div>
+				</div>
+			</a>
+			<div class="hd_gnb back_gray men">
+				<div class="gnb_down">					
+					<div class="gnb_box">
+						<div class="hd_list">
+							<ul>
+								<li class="title">SHOES</li>
+								<li>러닝화</li>
+								<li>스니커즈</li>
+								<li>슬립온</li>
+								<li>보트슈즈</li>
+								<li>하이탑</li>
+								<li>웨더 스니커즈</li>
+							</ul>
+						</div>
+						<div class="hd_list">
+							<ul>
+								<li class="title">APPAREL</li>
+								<li>티셔츠</li>
+								<li>스웨터</li>
+								<li>자켓</li>
+								<li>속옷</li>
+								<li>양말</li>
+							</ul>
+						</div>
+						<div class="hd_list">
+							<ul>
+								<li class="title">ACCESSORIES</li>
+								<li>Face Masks</li>
+								<li>신발 끈</li>
+								<li>인솔</li>
+								<li>기프트 카드</li>
+							</ul>
+						</div>
+						<div class="hd_feat">
+							<ul>
+								<li class="title">FEATURED</li>
+								<li>
+									<a href="">
+										<div class="img_box">
+											<img src="./img/gnb_man_1.jpg" alt="신제품">
+										</div>										
+										<div class="text_box">
+											<p>신제품</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="img_box">
+											<img src="./img/gnb_man_2.jpg" alt="신제품">
+										</div>
+										<div class="text_box">
+											<p>NEW TREE DASHER RELAY</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hd_gnb back_gray women">
+				<div class="gnb_down">
+					<div class="gnb_box">
+						<div class="hd_list">
+							<ul>
+								<li class="title">SHOES</li>
+								<li>러닝화</li>
+								<li>스니커즈</li>
+								<li>슬립온</li>
+								<li>플랫슈즈</li>
+								<li>보트슈즈</li>
+								<li>하이탑</li>
+								<li>웨더 스니커즈</li>
+							</ul>
+						</div>
+						<div class="hd_list">
+							<ul>
+								<li class="title">APPAREL</li>
+								<li>티셔츠</li>
+								<li>스웨터</li>
+								<li>자켓</li>
+								<li>속옷</li>
+								<li>양말</li>
+							</ul>
+						</div>
+						<div class="hd_list">
+							<ul>
+								<li class="title">ACCESSORIES</li>
+								<li>Face Masks</li>
+								<li>신발 끈</li>
+								<li>인솔</li>
+								<li>기프트 카드</li>
+							</ul>
+						</div>
+						<div class="hd_feat">
+							<ul>
+								<li class="title">FEATURED</li>
+								<li>
+									<a href="">
+										<img src="./img/gnb_woman_1.jpg" alt="신제품">
+										<p>신제품</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="./img/gnb_woman_2.jpg" alt="신제품">
+										<p>NEW TREE DASHER RELAY</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hd_gnb back_gray sus">
+				<div class="gnb_down">
+					<div class="gnb_box">
+						<div class="hd_list">
+							<ul>
+								<li class="title">INITIATIVES</li>
+								<li>기후 변화를 바로잡</li>
+								<li>올버즈의 운영 방식</li>
+								<li>탄소 발자국</li>
+								<li>재생 농업</li>
+								<li>탄소 배출 상쇄</li>
+							</ul>
+						</div>
+						<div class="hd_feat">
+							<ul>
+								<li class="title">FEATURED</li>
+								<li>
+									<a href="">
+										<img src="./img/gnb_sus_1.jpg" alt="기후 변화를 바로잡">
+										<p>기후 변화를 바로잡</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="./img/gnb_sus_2.jpg" alt="OUR MATERIALS">
+										<p>OUR MATERIALS</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hd_cart right_gray">
+				<div class="hd_right">
+					<div class="hd_rightbox">
+						<div class="slogan">
+							<!-- before 화살표 -->
+							<div class="slogan_top">
+								<img src="./img/cart.png" alt="장바구니">
+								<p>매일 언제나 무료 반품</p> <!-- after 브이손-->
+							</div>
+							<p>장바구니가 비어있습니다.</p>
+							<div class="btn_box">
+								<a href="" class="btn_shop">SHOP MEN'S</a>
+								<a href="" class="btn_shop">SHOP WOMEN'S</a>
+								<a href="" class="btn_shop">SHOP LACES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </header>
+
+    <main>
+    <!-- main_visual -->
+    <div class="main_visual">
+      <div class="visual_box">
+        <div class="slogan_box">
+          <h2>봄과 여름을 위한 올버즈 신발</h2>
+          <p>따뜻한 햇살에 잘 어울리는 새로운 색상을 선보입니다.</p>
+        </div>
+        <div class="go_shop">
+          <a href="">SHOP MEN</a>  
+          <a href="">SHOP WOMEN</a>
+        </div>  
+      </div>
+    </div>
+    <!-- collection -->
+    <div class="collection">
+      <h2>올버즈 컬렉션</h2>
+      <div class="tab">
+				<button><h4>남성 신발</h4></button>
+				<button><h4>여성 신발</h4></button>
+				<button><h4>의류</h4></button>
+			</div>
+      <ul class="men">
+        <li>
+					<div class="img_box">
+         	 <img src="./img/collection01.jpeg" alt="tree runner">
+					</div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Tree Runner</h3>
+							<p>시원한 스니커즈</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+         	 <img src="./img/collection02.jpeg" alt="Tree Dasher">
+					</div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Tree Dasher</h3>
+							<p>데일리 러닝화</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+         	 <img src="./img/collection_m.jpeg" alt="Wool Runner">
+					</div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Wool Runner</h3>
+							<p class="cloud">편안한 스니커즈</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+      </ul>
+      <ul class="women">
+        <li>
+					<div class="img_box">
+         	 <img src="./img/collection01.jpeg" alt="tree runner">
+					</div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Tree Runner</h3>
+							<p>시원한 스니커즈</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+         	 <img src="./img/collection02.jpeg" alt="Tree Dasher">
+					</div>					
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Tree Dasher</h3>
+							<p>데일리 러닝화</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+     	     <img src="./img/collection_w.jpg" alt="Tree Breezer">
+					</div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Tree Breezer</h3>
+							<p>통기성이 뛰어난 플랫슈즈</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+      </ul>
+      <ul class="clothes">
+        <li>
+					<div class="img_box">
+          	<img src="./img/collection_trino.jpg" alt="TrinoXO Tee">
+          </div>
+					<div class="text_wrap">
+						<div class="text_box TrinoXO">
+							<h3>TrinoXO™ Tee</h3>
+							<p class="shirt">부드러운 방취 티셔츠</p>
+						</div>
+						<a href="" class="men"><h5>SHOP MEN</h5></a>
+						<a href="" class="women"><h5>SHOP WOMEN</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+        	  <img src="./img/collection_hoodie.jpg" alt="Wool Hoodie">
+          </div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Wool Hoodie</h3>
+							<p class="cloud">포근한 더블 니트 후드</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+        <li>
+					<div class="img_box">
+        	  <img src="./img/collection_cardi.jpg" alt="Wool Cardi - Long">
+          </div>
+					<div class="text_wrap">
+						<div class="text_box">
+							<h3>Wool Cardi - Long</h3>
+							<p class="cloud">편안한 더블 니트 롱 가디건</p>
+						</div>
+						<a href=""><h5>SHOP NOW</h5></a>
+					</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- release -->
+    <div class="main_box release">
+      <div class="img_box new_shoes"></div>
+			<div class="text_box">
+				<div class="text">
+					<h2>곧 발매됩니다.</h2>
+					<p>아디다스와 협력하여 탄소 배출량을 혁신적으로 줄인 퍼포먼스 러닝화를 만들었습니다. 지구를 지키기 위해서는 경쟁보다 협력이 중요합니까요. 정식 발매까지는 기간이 남았으니, 앞으로 올버즈가 아디다스와 함께 어떻게 더 나은 제품을 만드는지 지켜봐주세요.</p>
+					<a href="">자세히 알아보기</a>
+				</div>
+			</div>
+    </div>
+
+		<!-- material -->
+		<div class="main_box material">
+			<div class="video_box">
+				<video autoplay loop muted>
+					<source src="./img/material.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="text_box">
+				<div class="text">
+					<h2>Made From Nature, For Nature</h2>
+					<p>올버즈는 자연 재료들이 지속 가능한 미래를 만들기 위한 최선의 선택임을 알기에, 메리노 울과 유칼립투스 나무와 같은 윤리적으로 조달한 자연재료를 사용하여 제품을 생산합니다.</p>
+					<a href="">자세히 알아보기</a>
+				</div>
+			</div>
+		</div>
+
+    <!-- slider -->
+		<div class="slider">
+			<h2>Shop By Category</h2>
+			<ul>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_running.jpeg" alt="러닝화">
+						</div>
+						<div class="text_box">
+							<h3>러닝화</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_men.jpeg" alt="남성 신발">
+						</div>
+						<div class="text_box">
+							<h3>남성 신발</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_women.jpeg" alt="여성 신발">
+						</div>
+						<div class="text_box">
+							<h3>여성 신발</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_menclothes.jpeg" alt="남성 의류">
+						</div>
+						<div class="text_box">
+							<h3>남성 의류</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_womenclothes.jpeg" alt="여성 의류">
+						</div>
+						<div class="text_box">
+							<h3>여성 의류</h3>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/category_socks.jpeg" alt="양말">
+						</div>
+						<div class="text_box">
+							<h3>Socks</h3>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- co2 -->
+		<div class="main_box co2">
+			<div class="video_box">
+				<video autoplay loop muted>
+					<source src="./img/co2.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="text_box">
+				<div class="text">
+					<h2>Tread Lighter</h2>
+					<p>일반적인 스니커즈 한 켤레는 12.5kg CO2e(이산화탄소환산 kg)를 배출합니다. 그리고 Allbirds 슈즈 제품의 평균 배출량은 7.6kg CO2e입니다. 수치만 봐도 더 낫죠? 하지만 우리의 목표는 그보다 원대합니다. 애초에 탄소 발자국을 제로로 만드는 것이지요. 탄소 발자국을 저감하기 위한 첫 번째 단계는 바로 측정에서 시작됩니다. 아직 탄소 발자국 제로에 도달하지는 못했지만 충분히 실현 가능한 목표입니다.</p>
+					<a href="">ALLBIRDS의 SUSTAINABILITY</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- stories -->
+		<div class="stories">
+			<h2>Stories</h2>
+			<ul>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/stories_clean.jpeg" alt="올버즈 세탁법">
+						</div>
+						<div class="text_box">
+							<h3>Clean Your Allbirds</h3>
+							<p>신고 계신 올버즈가 많이 더러워지셨나요? 올버즈 세탁법을 참고해주세요.</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/stories_run.jpeg" alt="Tree Dasher 소개">
+						</div>
+						<div class="text_box">
+							<h3>Run Hard, Tread Light</h3>
+							<p>Tree Dasher, 천연 소재로 만든 성능화를 소개합니다.</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="img_box">
+							<img src="./img/stories_sheep.jpeg" alt="">
+						</div>
+						<div class="text_box">
+							<h3>Allbirds는 비콥 (B Corp) 인증 기업입니다.</h3>
+							<p>시작부터 환경은 우리의 이해관계자였습니다.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</main>
+
+		<footer>
+			<div class="footer_wrap">
+				<div class="f_menu">
+					<ul>
+						<li class="bold">HELP</li>
+						<li><a href="">00308-321-0314(수신자 부담)</a></li>
+						<li><a href="">help@allbirds.co.kr</a></li>
+						<li><a href="">교환/반품</a></li>
+						<li><a href="">FAQ/Contact Us</a></li>
+					</ul>
+					<ul>
+						<li class="bold">SHOP</li>
+						<li><a href="">남성 신발</a></li>
+						<li><a href="">여성 신발</a></li>
+						<li><a href="">남성 의류</a></li>
+						<li><a href="">여성 의류</a></li>
+						<li><a href="">양말</a></li>
+					</ul>
+					<ul class="last">
+						<li class="bold">COMPANY</li>
+						<li><a href="">Sustainability</a></li>
+						<li><a href="">Our Materials</a></li>
+						<li><a href="">Our Story</a></li>
+						<li><a href="">Our Stores</a></li>
+						<li><a href="">디카프리오 & 올버즈</a></li>
+					</ul>
+					<div class="go_top">
+						<img src="./img/top_scroll_btn.png" alt="위로 가기">
+					</div>
+
+					<script>
+						$(function() {					
+							$(".go_top").click(function() {
+								$('html, body').animate({
+									scrollTop : 0
+								}, 400);
+								return false;
+							});
+						});	
+					</script>
+				</div> 
+				<!--f_menu end-->
+				<div class="f_middle">
+					<div class="sns">
+						<p class="head">ALLBIRDS를 팔로우 하세요!</p>
+						<p>최신 정보나 Allbirds 상품의 스냅샷 등을 보실 수 있습니다. 오! 물론 귀여운 양도 보실 수 있죠. #weareallbirds #올버즈</p>
+						<ul>
+							<li><a href=""><img src="./img/f_icon_insta.svg" alt="인스타그램"></i></a></li>
+							<li><a href=""><img src="./img/f_icon_twitter.svg" alt="트위터"></a></li>
+							<li><a href=""><img src="./img/f_icon_facebook.svg" alt="페이스북"></a></li>
+							<li><a href=""><img src="./img/f_icon_pinterest.svg" alt="핀터레스트"></a></li>
+						</ul>
+					</div>
+					<div class="cer">
+						<img src="./img/f_certified_b.svg" alt="Certified Corporationd">
+					</div>
+					<div class="f_national">
+						<ul>
+							<li><a href=""><img src="./img/f_national_us.svg" alt="미국"></a></li>
+							<li><a href=""><img src="./img/f_national_ko.png" alt="대한민국"></a></li>
+							<li><a href=""><img src="./img/f_national_eu.svg" alt="유럽연합"></a></li>
+							<li><a href=""><img src="./img/f_national_uk.svg" alt="영국"></a></li>
+							<li><a href=""><img src="./img/f_national_ca.svg" alt="캐나다"></a></li>
+							<li><a href=""><img src="./img/f_national_au.svg" alt="호주"></a></li>
+							<li><a href=""><img src="./img/f_national_nz.svg" alt="뉴질랜드"></a></li>
+							<li><a href=""><img src="./img/f_national_jp.png" alt="일본"></a></li>
+							<li><a href=""><img src="./img/f_national_cn.svg" alt="중국"></a></li>
+						</ul>
+					</div>
+				</div> --><!--//f_middle end-->
+				<div class="copyright">
+					<p>
+						© 2021 Allbirds, Inc. All Rights Reserved.<br><br><br>
+						<a href="">개인정보 처리방침.</a> | <a href="">이용 약관.</a><br>
+						(유)올버즈코리아 대표 Joseph Zev Zwillinger ㅣ 서울특별시 강남구 강남대로 160길 45(신사동)<br>
+						통신판매업신고번호 2021-서울강남-01775 ㅣ 등록번호 351-81-02021<br>
+						전화번호 00308-321-0314(수신자 부담) ㅣ E-mail <a href="">help@allbirds.co.kr</a> 
+					</p>
+				</div><!--//copyright end-->
+			</div>
+		</footer>
+		
+  </div>
+</body>
+</html>
