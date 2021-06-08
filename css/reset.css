@@ -53,7 +53,7 @@ h4 {
 }
 
 .scroll_hidden {
-  position: fixed;
+  /* position: fixed; */
   height:100%; 
   min-height:100%; 
   overflow:hidden !important; 

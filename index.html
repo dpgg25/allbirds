@@ -9,18 +9,99 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/footer.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <title>올버즈 포트폴리오</title>		
+  <title>올버즈 포트폴리오</title>
 	<script type="text/javascript">
+		$(document).on('scroll', function() {
+			var sHeight = $(document).scrollTop();
+			if ( sHeight > 50) {
+				$('.hd_wrap').addClass('on');
+				$('.hd_gnb').addClass('scroll');
+				$('.hd_back').addClass('scroll');
+			} else {
+				$('.hd_wrap').removeClass('on');
+				$('.hd_back').removeClass('scroll');
+			};
+		});
+
 		$(document).ready(function(){
-			$('.hd_top .ham_menu').click(function(){
+			$('.hd_top .ham_menu').click(function(e){
+				e.preventDefault();
 				$(this).toggleClass('change');
 				$('.hd_wrap .hd_back').toggleClass('on');
 				$('html, body').toggleClass('scroll_hidden');
 			});
+
+			var gnbMen = $('.hd_gnb.men');
+			var gnbWomen = $('.hd_gnb.women');
+			var gnbSus = $('.hd_gnb.sus');
+			var cart = $('.hd_cart');
+
+			$('.hd_back .gnb .men').click(function(e) {
+				// e.preventDefault();
+				// e.stopPropagation();
+				gnbWomen.removeClass('on');
+				gnbSus.removeClass('on');
+				cart.removeClass('on');
+				gnbMen.toggleClass('on');
+				if (gnbMen.hasClass('on')) {
+					$('html, body').addClass('scroll_hidden');
+				} else {
+					$('html, body').removeClass('scroll_hidden');
+				};
+			});//이쪽 버튼들을 누르면 최상단으로 가버리는데 이것저것 넣어봐도 고정이 안 됨
+			$('.hd_back .gnb .women').click(function(e) {
+				// e.preventDefault();
+				// e.stopPropagation();
+				gnbMen.removeClass('on');
+				gnbSus.removeClass('on');
+				cart.removeClass('on');
+				gnbWomen.toggleClass('on');
+				if (gnbWomen.hasClass('on')) {
+					$('html, body').addClass('scroll_hidden');
+				} else {
+					$('html, body').removeClass('scroll_hidden');
+				};
+			});
+			$('.hd_back .util .sus').click(function(e) {
+				// e.preventDefault();
+				// e.stopPropagation();
+				gnbWomen.removeClass('on');
+				gnbMen.removeClass('on');
+				cart.removeClass('on');
+				gnbSus.toggleClass('on');
+				if (gnbSus.hasClass('on')) {
+					$('html, body').addClass('scroll_hidden');
+				} else {
+					$('html, body').removeClass('scroll_hidden');
+				};
+			});
+
+			$('.hd_top .cart_box').click(function() {
+				gnbMen.removeClass('on');
+				gnbWomen.removeClass('on');
+				gnbSus.removeClass('on');
+				$('html, body').removeClass('scroll_hidden');
+				cart.addClass('on');
+			});			
+			$('.close_cart').click(function() {
+				cart.removeClass('on');
+			});
+
+			//gnb_down 높이 계산 후 gnb_bottom 높이 설정
+			var gnbHeight = $('.gnb_down').outerHeight();
+			$('.gnb_bottom').css('height', $(window).height() - gnbHeight);
 		});
 
-		$('.hd_back .gnb .men').on('click', function(){
-				$('.hd_gnb.man').toggleClass('on');
+		// 빈 공간 누르면 창 닫히게 하기
+		$(document).mouseup(function(e) {
+			if($('.gnb_bottom').is(e.target)) {
+				$('.hd_gnb').removeClass('on');
+				$('html, body').removeClass('scroll_hidden');
+			};
+
+			if($('.hd_left').is(e.target)) {
+				$('.hd_cart').removeClass('on');
+			}
 		});
 	</script>
 </head>
@@ -138,6 +219,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="gnb_bottom"></div>
 			</div>
 			<div class="hd_gnb back_gray women">
 				<div class="gnb_down">
@@ -178,20 +260,29 @@
 								<li class="title">FEATURED</li>
 								<li>
 									<a href="">
-										<img src="./img/gnb_woman_1.jpg" alt="신제품">
-										<p>신제품</p>
+										<div class="img_box">
+											<img src="./img/gnb_woman_1.jpg" alt="신제품">
+										</div>										
+										<div class="text_box">
+											<p>신제품</p>
+										</div>
 									</a>
 								</li>
 								<li>
 									<a href="">
-										<img src="./img/gnb_woman_2.jpg" alt="신제품">
-										<p>NEW TREE DASHER RELAY</p>
+										<div class="img_box">
+											<img src="./img/gnb_woman_2.jpg" alt="신제품">
+										</div>
+										<div class="text_box">
+											<p>NEW TREE DASHER RELAY</p>
+										</div>
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				<div class="gnb_bottom"></div>
 			</div>
 			<div class="hd_gnb back_gray sus">
 				<div class="gnb_down">
@@ -211,27 +302,38 @@
 								<li class="title">FEATURED</li>
 								<li>
 									<a href="">
-										<img src="./img/gnb_sus_1.jpg" alt="기후 변화를 바로잡">
+										<div class="img_box">
+											<img src="./img/gnb_sus_1.jpg" alt="기후 변화를 바로잡">
+										</div>
+										<div class="text_box">
 										<p>기후 변화를 바로잡</p>
+										</div>
 									</a>
 								</li>
 								<li>
 									<a href="">
-										<img src="./img/gnb_sus_2.jpg" alt="OUR MATERIALS">
-										<p>OUR MATERIALS</p>
+										<div class="img_box">
+											<img src="./img/gnb_sus_2.jpg" alt="OUR MATERIALS">
+										</div>
+										<div class="text_box">
+											<p>OUR MATERIALS</p>
+										</div>
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				<div class="gnb_bottom"></div>
 			</div>
 			<div class="hd_cart right_gray">
+				<div class="hd_left"></div>
 				<div class="hd_right">
 					<div class="hd_rightbox">
 						<div class="slogan">
 							<!-- before 화살표 -->
 							<div class="slogan_top">
+								<div class="close_cart"><span>장바구니 닫기</span></div>
 								<img src="./img/cart.png" alt="장바구니">
 								<p>매일 언제나 무료 반품</p> <!-- after 브이손-->
 							</div>
@@ -570,7 +672,7 @@
 
 					<script>
 						$(function() {					
-							$(".go_top").click(function() {
+							$('.go_top').click(function() {
 								$('html, body').animate({
 									scrollTop : 0
 								}, 400);

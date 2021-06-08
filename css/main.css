@@ -228,7 +228,7 @@ main {
 .main_box .text_box {
   display: flex;
   justify-content: center;
-  width: 41%;
+  width: 50%;
 }
 .main_box .text_box .text {
   display: flex;
