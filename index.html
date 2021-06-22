@@ -10,100 +10,6 @@
   <link rel="stylesheet" href="./css/footer.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <title>올버즈 포트폴리오</title>
-	<script type="text/javascript">
-		$(document).on('scroll', function() {
-			var sHeight = $(document).scrollTop();
-			if ( sHeight > 50) {
-				$('.hd_wrap').addClass('on');
-				$('.hd_gnb').addClass('scroll');
-				$('.hd_back').addClass('scroll');
-			} else {
-				$('.hd_wrap').removeClass('on');
-				$('.hd_back').removeClass('scroll');
-			};
-		});
-
-		$(document).ready(function(){
-			$('.hd_top .ham_menu').click(function(e){
-				e.preventDefault();
-				$(this).toggleClass('change');
-				$('.hd_wrap .hd_back').toggleClass('on');
-				$('html, body').toggleClass('scroll_hidden');
-			});
-
-			var gnbMen = $('.hd_gnb.men');
-			var gnbWomen = $('.hd_gnb.women');
-			var gnbSus = $('.hd_gnb.sus');
-			var cart = $('.hd_cart');
-
-			$('.hd_back .gnb .men').click(function(e) {
-				// e.preventDefault();
-				// e.stopPropagation();
-				gnbWomen.removeClass('on');
-				gnbSus.removeClass('on');
-				cart.removeClass('on');
-				gnbMen.toggleClass('on');
-				if (gnbMen.hasClass('on')) {
-					$('html, body').addClass('scroll_hidden');
-				} else {
-					$('html, body').removeClass('scroll_hidden');
-				};
-			});//이쪽 버튼들을 누르면 최상단으로 가버리는데 이것저것 넣어봐도 고정이 안 됨
-			$('.hd_back .gnb .women').click(function(e) {
-				// e.preventDefault();
-				// e.stopPropagation();
-				gnbMen.removeClass('on');
-				gnbSus.removeClass('on');
-				cart.removeClass('on');
-				gnbWomen.toggleClass('on');
-				if (gnbWomen.hasClass('on')) {
-					$('html, body').addClass('scroll_hidden');
-				} else {
-					$('html, body').removeClass('scroll_hidden');
-				};
-			});
-			$('.hd_back .util .sus').click(function(e) {
-				// e.preventDefault();
-				// e.stopPropagation();
-				gnbWomen.removeClass('on');
-				gnbMen.removeClass('on');
-				cart.removeClass('on');
-				gnbSus.toggleClass('on');
-				if (gnbSus.hasClass('on')) {
-					$('html, body').addClass('scroll_hidden');
-				} else {
-					$('html, body').removeClass('scroll_hidden');
-				};
-			});
-
-			$('.hd_top .cart_box').click(function() {
-				gnbMen.removeClass('on');
-				gnbWomen.removeClass('on');
-				gnbSus.removeClass('on');
-				$('html, body').removeClass('scroll_hidden');
-				cart.addClass('on');
-			});			
-			$('.close_cart').click(function() {
-				cart.removeClass('on');
-			});
-
-			//gnb_down 높이 계산 후 gnb_bottom 높이 설정
-			var gnbHeight = $('.gnb_down').outerHeight();
-			$('.gnb_bottom').css('height', $(window).height() - gnbHeight);
-		});
-
-		// 빈 공간 누르면 창 닫히게 하기
-		$(document).mouseup(function(e) {
-			if($('.gnb_bottom').is(e.target)) {
-				$('.hd_gnb').removeClass('on');
-				$('html, body').removeClass('scroll_hidden');
-			};
-
-			if($('.hd_left').is(e.target)) {
-				$('.hd_cart').removeClass('on');
-			}
-		});
-	</script>
 </head>
 <body>
   <div id="wrap">
@@ -371,121 +277,123 @@
 				<button><h4>여성 신발</h4></button>
 				<button><h4>의류</h4></button>
 			</div>
-      <ul class="men on">
-        <li>
-					<div class="img_box">
-         	 <img src="./img/collection01.jpeg" alt="tree runner">
-					</div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Tree Runner</h3>
-							<p>시원한 스니커즈</p>
+			<div class="ul_wrap">
+				<ul class="men on">
+					<li>
+						<div class="img_box">
+						<img src="./img/collection01.jpeg" alt="tree runner">
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-         	 <img src="./img/collection02.jpeg" alt="Tree Dasher">
-					</div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Tree Dasher</h3>
-							<p>데일리 러닝화</p>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Tree Runner</h3>
+								<p>시원한 스니커즈</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-         	 <img src="./img/collection_m.jpeg" alt="Wool Runner">
-					</div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Wool Runner</h3>
-							<p class="cloud">편안한 스니커즈</p>
+					</li>
+					<li>
+						<div class="img_box">
+						<img src="./img/collection02.jpeg" alt="Tree Dasher">
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-      </ul>
-      <ul class="women">
-        <li>
-					<div class="img_box">
-         	 <img src="./img/collection01.jpeg" alt="tree runner">
-					</div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Tree Runner</h3>
-							<p>시원한 스니커즈</p>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Tree Dasher</h3>
+								<p>데일리 러닝화</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-         	 <img src="./img/collection02.jpeg" alt="Tree Dasher">
-					</div>					
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Tree Dasher</h3>
-							<p>데일리 러닝화</p>
+					</li>
+					<li>
+						<div class="img_box">
+						<img src="./img/collection_m.jpeg" alt="Wool Runner">
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-     	     <img src="./img/collection_w.jpg" alt="Tree Breezer">
-					</div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Tree Breezer</h3>
-							<p>통기성이 뛰어난 플랫슈즈</p>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Wool Runner</h3>
+								<p class="cloud">편안한 스니커즈</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-      </ul>
-      <ul class="clothes">
-        <li>
-					<div class="img_box">
-          	<img src="./img/collection_trino.jpg" alt="TrinoXO Tee">
-          </div>
-					<div class="text_wrap">
-						<div class="text_box TrinoXO">
-							<h3>TrinoXO™ Tee</h3>
-							<p class="shirt">부드러운 방취 티셔츠</p>
+					</li>
+				</ul>
+				<ul class="women">
+					<li>
+						<div class="img_box">
+						<img src="./img/collection01.jpeg" alt="tree runner">
 						</div>
-						<a href="" class="men"><h5>SHOP MEN</h5></a>
-						<a href="" class="women"><h5>SHOP WOMEN</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-        	  <img src="./img/collection_hoodie.jpg" alt="Wool Hoodie">
-          </div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Wool Hoodie</h3>
-							<p class="cloud">포근한 더블 니트 후드</p>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Tree Runner</h3>
+								<p>시원한 스니커즈</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-        <li>
-					<div class="img_box">
-        	  <img src="./img/collection_cardi.jpg" alt="Wool Cardi - Long">
-          </div>
-					<div class="text_wrap">
-						<div class="text_box">
-							<h3>Wool Cardi - Long</h3>
-							<p class="cloud">편안한 더블 니트 롱 가디건</p>
+					</li>
+					<li>
+						<div class="img_box">
+						<img src="./img/collection02.jpeg" alt="Tree Dasher">
+						</div>					
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Tree Dasher</h3>
+								<p>데일리 러닝화</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
 						</div>
-						<a href=""><h5>SHOP NOW</h5></a>
-					</div>
-        </li>
-      </ul>
+					</li>
+					<li>
+						<div class="img_box">
+						<img src="./img/collection_w.jpg" alt="Tree Breezer">
+						</div>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Tree Breezer</h3>
+								<p>통기성이 뛰어난 플랫슈즈</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
+						</div>
+					</li>
+				</ul>
+				<ul class="clothes">
+					<li>
+						<div class="img_box">
+							<img src="./img/collection_trino.jpg" alt="TrinoXO Tee">
+						</div>
+						<div class="text_wrap">
+							<div class="text_box TrinoXO">
+								<h3>TrinoXO™ Tee</h3>
+								<p class="shirt">부드러운 방취 티셔츠</p>
+							</div>
+							<a href="" class="men"><h5>SHOP MEN</h5></a>
+							<a href="" class="women"><h5>SHOP WOMEN</h5></a>
+						</div>
+					</li>
+					<li>
+						<div class="img_box">
+							<img src="./img/collection_hoodie.jpg" alt="Wool Hoodie">
+						</div>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Wool Hoodie</h3>
+								<p class="cloud">포근한 더블 니트 후드</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
+						</div>
+					</li>
+					<li>
+						<div class="img_box">
+							<img src="./img/collection_cardi.jpg" alt="Wool Cardi - Long">
+						</div>
+						<div class="text_wrap">
+							<div class="text_box">
+								<h3>Wool Cardi - Long</h3>
+								<p class="cloud">편안한 더블 니트 롱 가디건</p>
+							</div>
+							<a href=""><h5>SHOP NOW</h5></a>
+						</div>
+					</li>
+				</ul>
+			</div>
     </div>
 
     <!-- release -->
@@ -727,5 +635,7 @@
 		</footer>
 		
   </div>
+
 </body>
+<script src="./js/header.js"></script>
 </html>
