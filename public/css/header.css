@@ -407,16 +407,18 @@
     background-size: 34px 30px;
   }
   .hd_wrap .cart_wrap .hd_cart {
+    display: none;
+  }
+  .hd_wrap .cart_wrap .hd_cart.on {
     display: block;
   }
-  .hd_wrap .cart_wrap .hd_cart .hd_right {    
-    display: none;
+  .hd_wrap .cart_wrap .hd_cart .hd_right {
     background-color: #fff;
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
-    right: -480px;
+    right: -110%;
     -webkit-transition: right 0.3s ease;
     -o-transition: right 0.3s ease;
     -moz-transition: right 0.3s ease;
@@ -510,6 +512,9 @@
     display: block;
     width: 100%;
     border-bottom: 1px solid #d3d4d5;
+  }
+  .hd_wrap nav > ul > li.on {
+    border-bottom: unset;
   }
   .hd_wrap .hd_back nav > ul > li.hidden {display: none;}
   .hd_wrap nav > ul > li > a {
