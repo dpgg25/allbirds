@@ -281,15 +281,15 @@
     <div class="collection">
       <h2>올버즈 컬렉션</h2>
       <div class="tab">
-				<button class="on"><h4>남성 신발</h4></button>
-				<button><h4>여성 신발</h4></button>
-				<button><h4>의류</h4></button>
+				<a href="coll_men" class="on">남성 신발</a>
+				<a href="coll_women">여성 신발</a>
+				<a href="coll_clothes">의류</a>
 			</div>
 			<div class="ul_wrap">
-				<ul class="men on">
+				<ul id="coll_men" class="on">
 					<li>
 						<div class="img_box">
-						<img src="./img/collection01.jpeg" alt="tree runner">
+						<img src="./img/collection01.jpeg" alt="Tree runner">
 						</div>
 						<div class="text_wrap">
 							<div class="text_box">
@@ -324,7 +324,7 @@
 						</div>
 					</li>
 				</ul>
-				<ul class="women">
+				<ul id="coll_women">
 					<li>
 						<div class="img_box">
 						<img src="./img/collection01.jpeg" alt="tree runner">
@@ -362,7 +362,7 @@
 						</div>
 					</li>
 				</ul>
-				<ul class="clothes">
+				<ul id="coll_clothes">
 					<li>
 						<div class="img_box">
 							<img src="./img/collection_trino.jpg" alt="TrinoXO Tee">
@@ -563,71 +563,77 @@
 		<footer>
 			<div class="footer_wrap">
 				<div class="f_menu">
-					<ul>
-						<li class="bold">HELP</li>
-						<li><a href="">00308-321-0314(수신자 부담)</a></li>
-						<li><a href="">help@allbirds.co.kr</a></li>
-						<li><a href="">교환/반품</a></li>
-						<li><a href="">FAQ/Contact Us</a></li>
-					</ul>
-					<ul>
-						<li class="bold">SHOP</li>
-						<li><a href="">남성 신발</a></li>
-						<li><a href="">여성 신발</a></li>
-						<li><a href="">남성 의류</a></li>
-						<li><a href="">여성 의류</a></li>
-						<li><a href="">양말</a></li>
-					</ul>
-					<ul class="last">
-						<li class="bold">COMPANY</li>
-						<li><a href="">Sustainability</a></li>
-						<li><a href="">Our Materials</a></li>
-						<li><a href="">Our Story</a></li>
-						<li><a href="">Our Stores</a></li>
-						<li><a href="">디카프리오 & 올버즈</a></li>
-					</ul>
+					<div class="f_top">
+						<ul>
+							<li class="bold">HELP</li>
+							<li><a href="">00308-321-0314(수신자 부담)</a></li>
+							<li><a href="">help@allbirds.co.kr</a></li>
+							<li><a href="">교환/반품</a></li>
+							<li><a href="">FAQ/Contact Us</a></li>
+						</ul>
+						<ul>
+							<li class="bold">SHOP</li>
+							<li><a href="">남성 신발</a></li>
+							<li><a href="">여성 신발</a></li>
+							<li><a href="">남성 의류</a></li>
+							<li><a href="">여성 의류</a></li>
+							<li><a href="">양말</a></li>
+						</ul>
+						<ul class="last">
+							<li class="bold">COMPANY</li>
+							<li><a href="">Sustainability</a></li>
+							<li><a href="">Our Materials</a></li>
+							<li><a href="">Our Story</a></li>
+							<li><a href="">Our Stores</a></li>
+							<li><a href="">디카프리오 & 올버즈</a></li>
+						</ul>
+					</div>
+
+					<!--f_menu end-->
+					<div class="f_middle">
+						<div class="sns">
+							<p class="head">ALLBIRDS를 팔로우 하세요!</p>
+							<p>최신 정보나 Allbirds 상품의 스냅샷 등을 보실 수 있습니다. 오! 물론 귀여운 양도 보실 수 있죠. #weareallbirds #올버즈</p>
+							<ul>
+								<li><a href=""><img src="./img/f_icon_insta.svg" alt="인스타그램"></i></a></li>
+								<li><a href=""><img src="./img/f_icon_twitter.svg" alt="트위터"></a></li>
+								<li><a href=""><img src="./img/f_icon_facebook.svg" alt="페이스북"></a></li>
+								<li><a href=""><img src="./img/f_icon_pinterest.svg" alt="핀터레스트"></a></li>
+							</ul>
+						</div>
+						<div class="cer">
+							<img src="./img/f_certified_b.svg" alt="Certified Corporationd">
+						</div>
+						<div class="f_national">
+							<ul>
+								<li><a href=""><img src="./img/f_national_us.svg" alt="미국"></a></li>
+								<li><a href=""><img src="./img/f_national_ko.png" alt="대한민국"></a></li>
+								<li><a href=""><img src="./img/f_national_eu.svg" alt="유럽연합"></a></li>
+								<li><a href=""><img src="./img/f_national_uk.svg" alt="영국"></a></li>
+								<li><a href=""><img src="./img/f_national_ca.svg" alt="캐나다"></a></li>
+								<li><a href=""><img src="./img/f_national_au.svg" alt="호주"></a></li>
+								<li><a href=""><img src="./img/f_national_nz.svg" alt="뉴질랜드"></a></li>
+								<li><a href=""><img src="./img/f_national_jp.png" alt="일본"></a></li>
+								<li><a href=""><img src="./img/f_national_cn.svg" alt="중국"></a></li>
+							</ul>
+						</div>
+					</div> --><!--//f_middle end-->
+
+					<div class="f_bottom">
+						<div class="copyright">
+							<p>
+								© 2021 Allbirds, Inc. All Rights Reserved.<br><br><br>
+								<a href="">개인정보 처리방침.</a> | <a href="">이용 약관.</a><br>
+								(유)올버즈코리아 대표 Joseph Zev Zwillinger ㅣ 서울특별시 강남구 강남대로 160길 45(신사동)<br>
+								통신판매업신고번호 2021-서울강남-01775 ㅣ 등록번호 351-81-02021<br>
+								전화번호 00308-321-0314(수신자 부담) ㅣ E-mail <a href="">help@allbirds.co.kr</a> 
+							</p>
+						</div><!--//copyright end-->
+					</div>
 					<div class="go_top">
 						<img src="./img/top_scroll_btn.png" alt="위로 가기">
 					</div>
-
-				<!--f_menu end-->
-				<div class="f_middle">
-					<div class="sns">
-						<p class="head">ALLBIRDS를 팔로우 하세요!</p>
-						<p>최신 정보나 Allbirds 상품의 스냅샷 등을 보실 수 있습니다. 오! 물론 귀여운 양도 보실 수 있죠. #weareallbirds #올버즈</p>
-						<ul>
-							<li><a href=""><img src="./img/f_icon_insta.svg" alt="인스타그램"></i></a></li>
-							<li><a href=""><img src="./img/f_icon_twitter.svg" alt="트위터"></a></li>
-							<li><a href=""><img src="./img/f_icon_facebook.svg" alt="페이스북"></a></li>
-							<li><a href=""><img src="./img/f_icon_pinterest.svg" alt="핀터레스트"></a></li>
-						</ul>
-					</div>
-					<div class="cer">
-						<img src="./img/f_certified_b.svg" alt="Certified Corporationd">
-					</div>
-					<div class="f_national">
-						<ul>
-							<li><a href=""><img src="./img/f_national_us.svg" alt="미국"></a></li>
-							<li><a href=""><img src="./img/f_national_ko.png" alt="대한민국"></a></li>
-							<li><a href=""><img src="./img/f_national_eu.svg" alt="유럽연합"></a></li>
-							<li><a href=""><img src="./img/f_national_uk.svg" alt="영국"></a></li>
-							<li><a href=""><img src="./img/f_national_ca.svg" alt="캐나다"></a></li>
-							<li><a href=""><img src="./img/f_national_au.svg" alt="호주"></a></li>
-							<li><a href=""><img src="./img/f_national_nz.svg" alt="뉴질랜드"></a></li>
-							<li><a href=""><img src="./img/f_national_jp.png" alt="일본"></a></li>
-							<li><a href=""><img src="./img/f_national_cn.svg" alt="중국"></a></li>
-						</ul>
-					</div>
-				</div> --><!--//f_middle end-->
-				<div class="copyright">
-					<p>
-						© 2021 Allbirds, Inc. All Rights Reserved.<br><br><br>
-						<a href="">개인정보 처리방침.</a> | <a href="">이용 약관.</a><br>
-						(유)올버즈코리아 대표 Joseph Zev Zwillinger ㅣ 서울특별시 강남구 강남대로 160길 45(신사동)<br>
-						통신판매업신고번호 2021-서울강남-01775 ㅣ 등록번호 351-81-02021<br>
-						전화번호 00308-321-0314(수신자 부담) ㅣ E-mail <a href="">help@allbirds.co.kr</a> 
-					</p>
-				</div><!--//copyright end-->
+				</div>
 			</div>
 		</footer>
 		

@@ -71,26 +71,22 @@ main {
   border-bottom: 2px solid #d3d4d5;
   margin-bottom: 36px;
 }
-.collection > .tab button {
+.collection > .tab a {
   padding: 30px 30px 12px;
   margin: 0 40px 0;
-  cursor: pointer;
-}
-.collection > .tab button.on {
-  border-bottom: 2px solid #000;
-  position: relative;
-  top: 2px;
-}
-.collection > .tab button h4 {
   font-size: 16px;
   letter-spacing: 2px;
   color: #d3d4d5;
   font-weight: 500;
+  cursor: pointer;
 }
-.collection > .tab button.on h4 {
+.collection > .tab a.on {
+  border-bottom: 2px solid #000;
+  position: relative;
+  top: 2px;
   color: #212a2f;
 }
-.collection > .tab button h4:hover {
+.collection > .tab a:hover {
   color: #212a2f;
 }
 .collection .ul_wrap > ul {
@@ -453,6 +449,9 @@ transform: scale(1.1); transition: transform 250ms ease-out 0s;}
     width: 90%;
     bottom: 5%;
   }
+  .main_visual .visual_box .go_shop a {
+    width: 47%;
+  }
   .main_visual .visual_box .go_shop a + a {
     margin-left: 12px;
   }
@@ -467,6 +466,7 @@ transform: scale(1.1); transition: transform 250ms ease-out 0s;}
     width: 90%;
   }
   .main_box .text_box .text {
+    width: 100%;
     margin-top: 24px;
   }
   .main_box .text_box .text > h2 {
@@ -479,6 +479,9 @@ transform: scale(1.1); transition: transform 250ms ease-out 0s;}
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.5px;
+  }
+  .main_box .text_box .text > a {
+    width: 90%;
   }
   .collection {
     align-content: unset;
