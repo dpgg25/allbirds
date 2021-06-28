@@ -1,178 +1,44 @@
-footer {
-  width: 100%;
-  background-color: #212a2f;
-  padding: 72px 0;
-}
-.footer_wrap {
-  margin: 0 auto;
-  max-width: 1380px;
-}
-.f_menu {
-  max-width: 1380px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 0 24px;
-  margin-bottom: 72px;
-}
-.f_middle {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 72px;
-}
-.f_top {
-  width: 100%;
-  display: flex;
-  margin-bottom: 70px;
-}
-.f_top ul, .f_middle > div {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-}
-.f_menu li {
-  margin-bottom: 12px;
-}
-.f_menu li a, .f_middle .sns p, .copyright p, .copyright a {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  line-height: 1.5;
-}
-.f_menu li.bold, .f_middle .sns p.head {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  line-height: 1.5;
-  letter-spacing: 2px;
-}
-.f_middle .sns ul {
-  display: flex;
-  margin-top: 18px;
-}
-.f_middle .sns ul li {
-  margin-right: 18px;
-}
-.f_middle .sns ul li:last-child {
-  margin-right: 0;
-}
-.f_middle .cer {
-  display: flex;
-  align-items: center;
-}
-.f_middle .cer img {
-  width: 78px;
-}
+footer {width: 100%; background-color: #212a2f; padding: 72px 0;}
+.footer_wrap {margin: 0 auto; max-width: 1380px;}
+.f_menu {max-width: 1380px; display: -webkit-box; display: -ms-flexbox; display: flex; justify-content: flex-start; flex-wrap: wrap; padding: 0 24px; margin-bottom: 72px;}
+.f_top {width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 70px;}
+.f_middle {width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; justify-content: flex-start; flex-wrap: wrap; margin-bottom: 72px;}
+.f_top ul, .f_middle > div {display: -webkit-box; display: -ms-flexbox; display: flex; flex-direction: column; width: 25%;}
+.f_menu li {margin-bottom: 12px;}
+.f_menu li a, .f_middle .sns p, .copyright p, .copyright a {color: #fff; font-size: 12px; font-weight: 400; letter-spacing: .5px; line-height: 1.5;}
+.f_menu li.bold, .f_middle .sns p.head {color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 18px; line-height: 1.5; letter-spacing: 2px;}
+.f_middle .sns ul {display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 18px;}
+.f_middle .sns ul li {margin-right: 18px;}
+.f_middle .sns ul li:last-child { margin-right: 0;}
+.f_middle .cer {display: -webkit-box; display: -ms-flexbox; display: flex; align-items: center;}
+.f_middle .cer img {width: 78px;}
 .f_middle > div.f_national {width: 50%; flex-direction: row;}
-.f_middle .f_national ul {
-  display: flex;
-  flex-wrap: wrap;  
-  flex-direction: row;
-}
-.f_middle .f_national ul li {
-  margin-right: 24px;
-}
-.f_middle .f_national ul li:last-child {
-  margin-right: 0;
-}
-.f_middle .f_national img {
-  width: 37px;
-}
+.f_middle .f_national ul {display: -webkit-box; display: -ms-flexbox; display: flex; flex-wrap: wrap; flex-direction: row;}
+.f_middle .f_national ul li {margin-right: 24px;}
+.f_middle .f_national ul li:last-child {margin-right: 0;}
+.f_middle .f_national img {width: 37px;}
 .f_bottom {width: 100%;}
-.copyright {
-  display: flex;
-  justify-content: center;
-}
-.copyright p, .copyright a {
-  text-align: center;
-}
-.copyright a {
-  text-decoration: underline;
-}
-.go_top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background-color: #222519;
-  cursor: pointer;
-}
-.go_top img {
-  width: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+.copyright {display: -webkit-box; display: -ms-flexbox; display: flex;justify-content: center;}
+.copyright p, .copyright a {text-align: center;}
+.copyright a {text-decoration: underline;}
+.go_top {position: fixed; right: 10px; bottom: 10px; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 50%; background-color: #222519; cursor: pointer;}
+.go_top img {width: 30px; position: absolute; top: 50%; left: 50%;-webkit-transform: translate(50%,50%); -ms-transform: translate(50%,50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%, -50%);}
 
 @media all and (max-width:991px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .f_top, .f_middle {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: unset;
-  }
-  .f_top > ul{
-    width: unset;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-  .f_top > ul.last {
-    margin-bottom: 0;
-  }
+  footer {display: flex; flex-direction: column; align-items: center;}
+  .f_top, .f_middle {display: -webkit-box; display: -ms-flexbox; display: flex; align-content: center; flex-wrap: wrap; flex-direction: column; box-sizing: border-box; align-items: center; justify-content: unset;}
+  .f_top > ul{width: unset; align-items: center; margin-bottom: 48px;}
+  .f_top > ul.last { margin-bottom: 0;}
   
-  .f_middle {
-    width: 100%;
-    margin: unset;
-  }
-  .f_middle > div {
-    width: unset;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-  .f_middle > div.f_national {
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    flex-direction: unset;
-    justify-content: center;
-  }
-  .f_middle .sns > p {
-    margin-bottom: 18px;
-    text-align: center;
-  }
-  .f_middle .sns ul {
-    margin: unset;
-  }
-  .f_middle .f_national ul li {
-
-  }
-  .copyright {
-    width: 100%;
-  }
+  .f_middle {width: 100%; margin: unset;}
+  .f_middle > div {width: unset; align-items: center; margin-bottom: 48px;}
+  .f_middle > div.f_national {width: 100%; margin-bottom: 25px; margin-top: 15px; flex-direction: unset; justify-content: center;}
+  .f_middle .sns > p {margin-bottom: 18px; text-align: center;}
+  .f_middle .sns ul {margin: unset;}
+  .copyright {width: 100%;}
 }
 
 @media all and (max-width:767px) {  
-  .f_middle > div.f_national {
-    align-items: unset;
-  }
-
-  .f_middle .f_national > ul > li {
-    margin-right: 6px;
-  }
+  .f_middle > div.f_national {align-items: unset;}
+  .f_middle .f_national > ul > li {margin-right: 3px;}
 }
